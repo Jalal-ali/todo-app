@@ -6,7 +6,7 @@ function renderTodo() {
    ol.innerHTML = ' ';
    for(let i=0; i < arr.length ; i++){
       ol.innerHTML += `<br /><li class="li"> ${arr[i]}
-     <span onclick="deleteTodo(${i})" class="dlt-btnn" ><i class="fa-solid fa-trash"></i></span> <span onclick="deleteTodo(${i})" class="edit-btnn"><i class="fa-solid fa-pen-to-square"></i></span></li>`
+     <span onclick="deleteTodo(${i})" class="dlt-btnn" ><i class="fa-solid fa-trash"></i></span> <span onclick="editTodo(${i})" class="edit-btnn"><i class="fa-solid fa-pen-to-square"></i></span></li>`
 
    }
 }
